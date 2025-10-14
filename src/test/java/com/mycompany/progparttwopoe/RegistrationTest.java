@@ -16,25 +16,30 @@ import static org.junit.Assert.*;
  * @author DC
  */
 public class RegistrationTest {
-    
+
     public RegistrationTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
+        // Prevent HeadlessException on GitHub Actions
+        System.setProperty("java.awt.headless", "true");
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
+
+    
+    
 
     /**
      * Test of checkUserName method, of class Registration.

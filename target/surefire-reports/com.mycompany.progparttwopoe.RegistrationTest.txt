@@ -1,14 +1,21 @@
 -------------------------------------------------------------------------------
 Test set: com.mycompany.progparttwopoe.RegistrationTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.082 s <<< FAILURE! -- in com.mycompany.progparttwopoe.RegistrationTest
-com.mycompany.progparttwopoe.RegistrationTest.testGetLastName -- Time elapsed: 0.019 s <<< FAILURE!
-java.lang.AssertionError: expected:<> but was:<null>
-	at org.junit.Assert.fail(Assert.java:93)
-	at org.junit.Assert.failNotEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:128)
-	at org.junit.Assert.assertEquals(Assert.java:147)
-	at com.mycompany.progparttwopoe.RegistrationTest.testGetLastName(RegistrationTest.java:194)
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.273 s <<< FAILURE! -- in com.mycompany.progparttwopoe.RegistrationTest
+com.mycompany.progparttwopoe.RegistrationTest.testRegisterUser -- Time elapsed: 0.222 s <<< ERROR!
+java.awt.HeadlessException
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.SwingUtilities$SharedOwnerFrame.<init>(SwingUtilities.java:1919)
+	at java.desktop/javax.swing.SwingUtilities.getSharedOwnerFrame(SwingUtilities.java:1995)
+	at java.desktop/javax.swing.JOptionPane.getRootFrame(JOptionPane.java:1696)
+	at java.desktop/javax.swing.JOptionPane.showInputDialog(JOptionPane.java:587)
+	at java.desktop/javax.swing.JOptionPane.showInputDialog(JOptionPane.java:534)
+	at java.desktop/javax.swing.JOptionPane.showInputDialog(JOptionPane.java:482)
+	at com.mycompany.progparttwopoe.Registration.registerUser(Registration.java:57)
+	at com.mycompany.progparttwopoe.RegistrationTest.testRegisterUser(RegistrationTest.java:97)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
