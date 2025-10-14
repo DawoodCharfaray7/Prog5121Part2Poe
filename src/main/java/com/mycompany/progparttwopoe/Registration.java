@@ -8,12 +8,11 @@ import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
 
 /**
- * @param username entered by the user
- * @return true if valid, false otherwise
+ *
  * @author DC
  */
-class Registration {
- 
+public class Registration {
+    
     private String username;
     private String password;
     private String cellNumber;
@@ -142,3 +141,4 @@ class Registration {
     public String getLastName() { return lastName; }
 }
     
+

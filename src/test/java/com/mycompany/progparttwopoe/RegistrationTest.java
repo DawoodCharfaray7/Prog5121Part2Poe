@@ -20,6 +20,21 @@ public class RegistrationTest {
     public RegistrationTest() {
     }
     
+    @BeforeClass
+    public static void setUpClass() {
+    }
+    
+    @AfterClass
+    public static void tearDownClass() {
+    }
+    
+    @Before
+    public void setUp() {
+    }
+    
+    @After
+    public void tearDown() {
+    }
 
     /**
      * Test of checkUserName method, of class Registration.
@@ -33,7 +48,7 @@ public class RegistrationTest {
         boolean result = instance.checkUserName(user);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-       
+        
     }
 
     /**
@@ -48,7 +63,7 @@ public class RegistrationTest {
         boolean result = instance.checkPasswordComplexity(pwd);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        
+       
     }
 
     /**
@@ -122,7 +137,7 @@ public class RegistrationTest {
         String result = instance.getUsername();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        
+       
     }
 
     /**
@@ -136,7 +151,7 @@ public class RegistrationTest {
         String result = instance.getPassword();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-
+       
     }
 
     /**
@@ -150,7 +165,7 @@ public class RegistrationTest {
         String result = instance.getCellNumber();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        
+     
     }
 
     /**
@@ -178,7 +193,7 @@ public class RegistrationTest {
         String result = instance.getLastName();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-       
+        
     }
     
 }
