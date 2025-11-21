@@ -1,3 +1,6 @@
+ 
+* GitHub Repository: https://github.com/DawoodCharfaray7/Prog5121Part2Poe
+
 # Prog5121Part2Poe
 ChatApp
 
@@ -16,6 +19,8 @@ GitHub Repository: https://github.com/DawoodCharfaray7/Prog5121Part2Poe
 
 
 PART 3 - POE
+
+Final Changes
 
 Message Arrays Implemented
 Five parallel arrays were created (messageIDs, recipients, messages, actions, hashes) to store message data exactly as provided in the POE.
