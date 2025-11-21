@@ -31,7 +31,7 @@ public class RegistrationTest {
     public void testCheckCellPhoneNumber() {
         Registration r = new Registration();
 
-        // regex accepts +27 + 9 digits OR 0 + 9 digits
+        //regex accepts +27 + 9 digits OR 0 + 9 digits
         assertTrue(r.checkCellPhoneNumber("+27821234567"));
         assertTrue(r.checkCellPhoneNumber("0821234567"));
         assertFalse(r.checkCellPhoneNumber("12345"));
@@ -78,7 +78,7 @@ public class RegistrationTest {
             fail("Reflection failed: " + e.getMessage());
         }
 
-        assertEquals("Welcome John Doe it is great to see you.",
+        assertEquals("Welcome John Cena it is great to see you.",
                 r.returnLoginStatus(true));
 
         assertEquals("Username or password incorrect, please try again.",
@@ -106,7 +106,7 @@ public class RegistrationTest {
             pField.set(r, "Pass@123");
             cField.set(r, "+27821234567");
             fField.set(r, "John");
-            lField.set(r, "Doe");
+            lField.set(r, "Cena");
 
         } catch (Exception e) {
             fail("Reflection failed: " + e.getMessage());
@@ -116,6 +116,6 @@ public class RegistrationTest {
         assertEquals("Pass@123", r.getPassword());
         assertEquals("+27821234567", r.getCellNumber());
         assertEquals("John", r.getFirstName());
-        assertEquals("Doe", r.getLastName());
+        assertEquals("Cena", r.getLastName());
     }
 }
