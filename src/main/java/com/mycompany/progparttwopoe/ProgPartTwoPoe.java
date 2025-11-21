@@ -5,7 +5,7 @@
 package com.mycompany.progparttwopoe;
 
 /**
- * PROG5121 Part 2 POE
+ * PROG5121 Part 3 POE
  * @author DC
  * Student Number: ST10475792
  * GitHub Repository: https://github.com/DawoodCharfaray7/Prog5121Part2Poe
@@ -22,7 +22,7 @@ public class ProgPartTwoPoe {
 }
 
 
-        
+      
  
 
 
